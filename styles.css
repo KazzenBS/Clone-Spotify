@@ -1,0 +1,118 @@
+body {
+    background-color:black;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 1.8rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.75rem;
+    width: 300px;
+    }
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 0.9rem 0 0 0.9rem;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.sidebar__navigation .logo{
+    background: #121212;
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.sidebar nav ul{
+    margin-top: 20px;
+    padding: 0 1.25rem 0.62rem 1.25rem;
+}
+
+.sidebar ul li{
+    padding: 0.62rem 0;
+}
+
+.sidebar nav li a {
+    color: #B3B3B3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Biblioteca */
+
+.sidebar__biblioteca {
+    margin-top: 0.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+}
+
+.sidebar__biblioteca-titulo {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 0.9rem 0 0.9rem;
+}
+
+.sidebar__biblioteca-titulo a {
+    color: #B3B3B3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.sidebar__biblioteca-titulo a img{
+    margin-right: 0.2rem;
+}
+
+.biblioteca__criar-playlist, .biblioteca__seguir-podcast{
+    margin: 0.5rem 1rem 0.5rem 0;
+    background-color:#242424;
+    border-radius: 0.5rem;
+    padding: 0.9rem 0.3rem 0.9rem 0.9rem;
+    display: flex;    
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.biblioteca__criar-playlist h2, .biblioteca__seguir-podcast h2{
+    color:#FFF ;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.biblioteca__criar-playlist span, .biblioteca__seguir-podcast span {
+    color:#FFF ;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.biblioteca__criar-playlist a, .biblioteca__seguir-podcast a {
+    text-decoration: none;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    align-self: flex-start;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+    color:#242424;
+}
+
+
+
+
+
+
+
