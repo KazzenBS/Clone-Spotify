@@ -75,6 +75,15 @@ h1 {
     margin-right: 0.2rem;
 }
 
+.sidebar__biblioteca-titulo button {
+    background-color: transparent;
+    border: 0px;
+}
+
+/* .sidebar__biblioteca-titulo button:active {
+    background-color: aliceblue;
+} */
+
 .biblioteca__criar-playlist, .biblioteca__seguir-podcast{
     margin: 0.5rem 1rem 0.5rem 0;
     background-color:#242424;
@@ -86,28 +95,67 @@ h1 {
 }
 
 .biblioteca__criar-playlist h2, .biblioteca__seguir-podcast h2{
+    margin-left: 0.5rem;
     color:#FFF ;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
 .biblioteca__criar-playlist span, .biblioteca__seguir-podcast span {
+    margin-left: 0.5rem;
     color:#FFF ;
     font-weight: 300;
     font-size: 0.7rem;
 }
 
 .biblioteca__criar-playlist a, .biblioteca__seguir-podcast a {
+    margin-left: 0.5rem;
     text-decoration: none;
+    text-transform: none;
     background-color: #FFF;
     display: flex;
     justify-content: center;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     align-self: flex-start;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding: 0.9rem;
+    width: 113px;
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color:#242424;
+}
+
+.cookies {
+    margin-left: 0.5rem;
+    padding: 0.9rem 0.3rem 0.9rem 0.9rem;
+}
+
+.cookies a{
+    text-decoration: none;
+    color: #B3B3B3;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.cookies a:hover {
+    text-decoration: underline;
+}
+
+.languages {
+    padding: 0.9rem 0.3rem 0.9rem 0.9rem;
+}
+
+.languages button {
+    align-items: center;
+    background-color: transparent;
+    font-weight: 700;
+    border-radius: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid #878787;
+    cursor: pointer;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
 }
 
 
