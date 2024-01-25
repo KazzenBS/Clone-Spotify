@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/var.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -14,77 +16,105 @@
 </head>
 
 <body>
+
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="sidebar__biblioteca">
+            <div class="sidebar__biblioteca-titulo">
+                <a href="">
+                    <img src="/assets/icons/biblioteca.svg" alt="logo biblioteca">
+                    <span>Sua Biblioteca</span>
+                </a>
+                <button>
+                    <img src="/assets/icons/plus.svg" alt="botao mais">
+                </button>
+            </div>
+
+            <div class="biblioteca__criar-playlist">
+                <h2>Crie sua primeira playlist</h2>
+                <span>É fácil, vamos te ajudar</span>
+                <a href="#">Criar Playlist</a>
+            </div>
+
+            <div class="biblioteca__seguir-podcast">
+                <h2>Que tal seguir um podcast novo?</h2>
+                <span>Avisaremos você sobre novos episódios</span>
+                <a href="#">Explore Podcasts</a>
+            </div>
+
+            <div class="cookies">
+                <a href="#">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+
+
+        </nav>
+    </div>
+
     <main>
-        <div class="sidebar">
-            <nav class="sidebar__navigation">
-                <div class="logo">
-                    <a href="#">
-                        <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify">
-                    </a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-home"></span>
-                                <span>Início</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-search"></span>
-                                <span>Buscar</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="sidebar__biblioteca">
-                <div class="sidebar__biblioteca-titulo">
-                    <a href="">
-                        <img src="/assets/icons/biblioteca.svg" alt="logo biblioteca">
-                        <span>Sua Biblioteca</span>
-                    </a>
-                    <button>
-                        <img src="/assets/icons/plus.svg" alt="botao mais">
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+
+                    <button class="arrow-left">
+                        <img src="./assets/icons/small-left.png" alt="seta esquerda">
                     </button>
-                </div>
-
-                <div class="biblioteca__criar-playlist">
-                    <h2>Crie sua primeira playlist</h2>
-                    <span>É fácil, vamos te ajudar</span>
-                    <a href="#">Criar Playlist</a>
-                </div>
-
-                <div class="biblioteca__seguir-podcast">
-                    <h2>Que tal seguir um podcast novo?</h2>
-                    <span>Avisaremos você sobre novos episódios</span>
-                    <a href="#">Explore Podcasts</a>
-                </div>
-
-                <div class="cookies">
-                    <a href="#">Cookies</a>
-                </div>
-
-                <div class="languages">
-                    <button class="languages__button">
-                        <span class="fa fa-globe"></span>
-                        <span>Português do Brasil</span>
+                    <button class="arrow-right">
+                        <img src="./assets/icons/small-right.png" alt="seta direita">
                     </button>
+
+                    <div class="header__search">
+                        <img src="./assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+
                 </div>
 
-
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+        
             </nav>
         </div>
-
     </main>
+
     <footer>
         <section class="rodape-premium">
             <div class="rodape-premium__conteudo">
-              <div>
-                <h2>TESTAR O PREMIUM DE GRAÇA</h2>
-                <h2>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</h2>
-              </div>
+                <div>
+                    <h2>TESTAR O PREMIUM DE GRAÇA</h2>
+                    <h2>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de
+                        cartão de crédito.</h2>
+                </div>
                 <a href="#" class="rodape-premium__conteudo-botao"><span>Inscreva-se grátis</span></a>
             </div>
         </section>
